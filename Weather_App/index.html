@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" class="css">
+  <script src="script.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/4dc2067749.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <div class="search-wrapper">
+    <div class="logo"></div>
+    <div class="search-bar">
+      <input type="text"  placeholder="Search city..." id="location" />
+      
+      <button id="getweather" onclick="getUserLocation()"> Get Weather </button>
+     
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="fit">
+      <div class="card weather-now">
+        <div id="temperature">--C</div>
+        <div class="weather_icon"></div>
+        <p>Broken Clouds</p>
+        <p id="date">--</p>
+        <div class="city"></div>
+      </div>
+
+      <div class="card">
+        <h2>5 Days Forecast</h2>
+        <div class="forecast">
+          <div class="forecast-day">2 Mar<br>🌙<br>7°C</div>
+          <div class="forecast-day">3 Mar<br>🌙<br>7°C</div>
+          <div class="forecast-day">4 Mar<br>☁️<br>7°C</div>
+          <div class="forecast-day">5 Mar<br>🌧️<br>6°C</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2>Today's Highlights</h2>
+        <div class="highlight-grid">
+          <div>
+            <i class="fa-solid fa-cloud" ></i>
+            <br>
+            <br>
+            <p id="clouds">--</p>
+          </div>
+          <div>
+            Sunrise & Sunset:
+            <br>
+            <br>
+            <i id="sunrise">--:--</i>
+            <br>
+            <i id="sunset">--:--</i>
+          </div>
+          <div>
+            <i class="fa-solid fa-water"></i>
+            <br>
+            <p id="humidity">
+              --%
+            </p>
+            <br>
+            <i class="fa-solid fa-wind"></i>
+            <br>
+            <p id="wind">
+              -- m/s
+            </p>
+          </div>
+          <div>
+            <p id="pressure">pressure: --</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-eye"></i>
+            <p id="visibility">--km</p>
+          </div>
+          <div>
+            
+            <i class="fas fa-temperature-high"></i>
+            <p id="feelslike">--C</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Today at</h2>
+        <div class="hourly">
+          <div class="hourly-time">9 PM<br>🌙</div>
+          <div class="hourly-time">12 AM<br>☁️</div>
+          <div class="hourly-time">3 AM<br>☁️</div>
+          <div class="hourly-time">6 AM<br>🌙</div>
+          <div class="hourly-time">9 AM<br>☀️</div>
+          <div class="hourly-time">12 PM<br>☀️</div>
+          <div class="hourly-time">3 PM<br>☀️</div>
+          <div class="hourly-time">6 PM<br>🌙</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
