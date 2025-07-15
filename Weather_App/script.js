@@ -1,6 +1,6 @@
 function getUserLocation() {
   const UserLocation = document.getElementById("location").value;
-  const WEATHER_API_KEY = "1a1698517d5fb0fbf321a2611bcc994f"; 
+  const WEATHER_API_KEY = "Enter your api key"; 
   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${UserLocation}&appid=${WEATHER_API_KEY}&units=metric`;
   const FORECAST_API_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${UserLocation}&appid=${WEATHER_API_KEY}&units=metric`;
 
